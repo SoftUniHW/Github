@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>Prodavachnik</title>
     <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/jquery.mockjax.min.js"></script>
+    <script src="scripts/api.js"></script>
     <script src="scripts/prodavachnik.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/prodavachnik.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 </head>
+
 
 <body>
     <header id="menu" class="menu">
@@ -47,6 +50,27 @@
             <div><input type="button" id="buttonRegisterUser" value="Register" /></div>
         </form>
     </section>
+
+    <section id="viewAds" class="viewAds">
+        <h1 class="titleForm">Advertisements</h1>
+        <div id="ads" class="ads">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Publisher</th>
+                    <th>Price</th>
+                    <th>Date Published</th>
+                </tr>
+                <tr>
+                    <td>Ad title</td>
+                    <td>Ad author</td>
+                    <td>Price</td>
+                    <td>Date published</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
 
     <script>
         startApp();
