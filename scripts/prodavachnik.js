@@ -1,11 +1,8 @@
 function startApp() {
-<<<<<<< HEAD
     if (sessionStorage.getItem('authToken') !== null) {
         let username = sessionStorage.getItem('username');
         $('#loggedInUser').text("Welcome, " + username + "!");
     }
-=======
->>>>>>> aa18989064e970c71d54f9aa2bb275dc5f16091d
     showHideMenuLinks();
     showHomeView();
 
@@ -39,20 +36,14 @@ function startApp() {
             $("#linkRegister").show();
             $("#linkListAds").hide();
             $("#linkLogout").hide();
-<<<<<<< HEAD
             $("#loggedInUser").hide();
-=======
->>>>>>> aa18989064e970c71d54f9aa2bb275dc5f16091d
         } else {
             // We have logged in user
             $("#linkLogin").hide();
             $("#linkRegister").hide();
             $("#linkListAds").show();
             $("#linkLogout").show();
-<<<<<<< HEAD
             $("#loggedInUser").show();
-=======
->>>>>>> aa18989064e970c71d54f9aa2bb275dc5f16091d
         }
     }
 
@@ -101,18 +92,14 @@ function startApp() {
         sessionStorage.setItem('authToken', userAuth);
         let userId = userInfo._id;
         sessionStorage.setItem('userId', userId);
-<<<<<<< HEAD
         let username = userInfo.username;
         sessionStorage.setItem('username', username);
         $('#loggedInUser').text("Welcome, " + username + "!");
     }
-=======
-    }
 
->>>>>>> aa18989064e970c71d54f9aa2bb275dc5f16091d
     // user/register
     function registerUser() {
-        const kinveyRegisterUrl = kinveyBaseUrl + "user/" + kinveyAppKey + "/";;
+        const kinveyRegisterUrl = kinveyBaseUrl + "user/" + kinveyAppKey + "/";
         const kinveyAuthHeaders = {
             'Authorization': "Basic " + btoa(kinveyAppKey + ":" + kinveyAppSecret),
         };
@@ -188,8 +175,4 @@ function startApp() {
             }
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> aa18989064e970c71d54f9aa2bb275dc5f16091d
