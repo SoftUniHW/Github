@@ -1,2 +1,1 @@
-# Github
-Homework about github
+Exercise:  GIT AND GITHUB

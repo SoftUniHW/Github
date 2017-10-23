@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Prodavachnik</title>
@@ -12,32 +11,26 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 </head>
 
-
 <body>
-    <header id="menu" class="menu">
-        <a href="#" id="linkHome" class="menu-item" >Home</a>
-        <a href="#" id="linkLogin" class="menu-item">Login</a>
-        <a href="#" id="linkRegister" class="menu-item">Register</a>
-        <a href="#" id="linkListAds" class="menu-item">List Advertisements</a>
-		<a href="#" id="linkCreateAd" class="menu-item">Create Advertisement</a>
-        <a href="#" id="linkLogout" class="menu-item">Logout</a>
-        <span id="loggedInUser" class="menu-item"></span>
-        <div></div>
-    </header>
+<header id="menu" class="menu">
+    <a href="#" id="linkHome" class="menu-item" >Home</a>
+    <a href="#" id="linkLogin" class="menu-item">Login</a>
+    <a href="#" id="linkRegister" class="menu-item">Register</a>
+    <a href="#" id="linkListAds" class="menu-item">List Advertisements</a>
+    <a href="#" id="linkCreateAd" class="menu-item">Create Advertisement</a>
+    <a href="#" id="linkLogout" class="menu-item">Logout</a>
+    <span id="loggedInUser" class="menu-item"></span>
+    <div></div>
+</header>
 
-    <main>
-
-        <section id="loadingBox" class="loadingBox">Loading ...</section>
-
-        <section id="infoBox" class="infoBox">Info</section>
-   
-        <section id="errorBox" class="errorBox">Error</section>
-
-
-        <section id="viewHome" class="viewHome">
-            <h1 class="title">Welcome</h1>
-            <p class="body-text">Welcome to our advertisement site.</p>
-        </section>
+<main>
+    <section id="loadingBox" class="loadingBox">Loading ...</section>
+    <section id="infoBox" class="infoBox">Info</section>
+    <section id="errorBox" class="errorBox">Error</section>
+    <section id="viewHome" class="viewHome">
+        <h1 class="title">Welcome</h1>
+        <p class="body-text">Welcome to our advertisement site.</p>
+    </section>
 
     <section id="viewLogin" class="viewLogin">
         <h1 class="titleForm">Please login</h1>
@@ -68,21 +61,21 @@
                 <tr>
                     <th>Title</th>
                     <th>Publisher</th>
-					<th>Description</th>
+                    <th>Description</th>
                     <th>Price</th>
                     <th>Date Published</th>
-					<th>Actions</th>
+                    <th>Actions</th>
                 </tr>
                 <tr>
                     <td>Ad title</td>
                     <td>Ad author</td>
-					<td>Ad description</td>
+                    <td>Ad description</td>
                     <td>Price</td>
                     <td>Date published</td>
-					<td>
+                    <td>
                         <a href="#">[Read more]</a>
                     </td>
-					<td>
+                    <td>
                         <a href="#">[Delete]</a>
                         <a href="#">[Edit]</a>
                     </td>
@@ -90,6 +83,10 @@
             </table>
         </div>
     </section>
+
+    <section id="viewDetailsAd" class="viewDetailsAd">
+    </section>
+
     <section id="viewCreateAd" class="viewCreateAd">
         <h1 class="titleForm">Create new Advertisement</h1>
         <form id="formCreateAd" class="form">
@@ -118,7 +115,6 @@
         </form>
     </section>
 
-	
     <script>
         startApp();
     </script>

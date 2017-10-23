@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: 'Open Sans', sans-serif;
     color: #333333;
@@ -155,9 +154,11 @@ footer {
 #loadingBox {
     background: #7CB3E9;
 }
+
 #infoBox {
     background: #393;
 }
+
 #errorBox {
     background: #F50;
 }
